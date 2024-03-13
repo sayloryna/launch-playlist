@@ -1,2 +1,20 @@
-// Anota el tipo de esta variable
-export const songTitles = [];
+export const songTitles: string[] = [
+  "La Bilirrubina",
+  "Suavemente",
+  "Aserejé",
+  "Carnaval",
+  "Hay que venir al Sur",
+  "Bailando",
+  "La Camisa Negra",
+  "Vivir Mi Vida",
+  "Ai Se Eu Te Pego",
+  "Danza Kuduro",
+  "La Gozadera",
+  "El Taxi",
+  "Despacito",
+  "Mambo nº5",
+  "Valls de las Mariposas",
+  "Paquito el Chocolatero",
+  "Follow the leader",
+  "La Macarena",
+];
