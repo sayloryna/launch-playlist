@@ -2,9 +2,8 @@ export const isTitleEmpty = (songTitle: string): boolean => {
   let isEmpty: boolean;
   // Asígnale a la variable isEmpty un true o un false dependiendo de si
   // la variable title recibida tiene un string vacío o no
-  isEmpty = songTitle.length === 0;
 
-  return isEmpty;
+  return (isEmpty = songTitle.length === 0);
 };
 
 export const doesTitleExist = (
@@ -14,17 +13,16 @@ export const doesTitleExist = (
   let doesExist: boolean;
   // Asígnale a la variable doesExist un true o un false dependiendo de si
   // la variable title recibida ya existe en el array de títulos recibido
-  doesExist = songTitles.includes(songTitle);
-  return doesExist;
+
+  return (doesExist = songTitles.includes(songTitle));
 };
 
 export const isTitleShort = (songTitle: string): boolean => {
   let isShort: boolean;
   // Asígnale a la variable isShort un true o un false dependiendo de si
   // la variable title recibida tiene menos de 3 caracteres
-  isShort = songTitle.length < 3;
 
-  return isShort;
+  return (isShort = songTitle.length < 3);
 };
 
 export const isPlaylistFull = (songTitles: string[]): boolean => {
@@ -32,9 +30,7 @@ export const isPlaylistFull = (songTitles: string[]): boolean => {
   // Asígnale a la variable isFull un true o un false dependiendo de si
   // el array de títulos recibido tiene 5 o más elementos
 
-  isFull = songTitles.length >= 5;
-
-  return isFull;
+  return (isFull = songTitles.length >= 5);
 };
 
 export const addSong = (songTitle: string, songTitles: string[]): void => {
@@ -50,8 +46,8 @@ export const sortSongs = (songTitles: string[]): void => {
 export const getSongsCount = (songTitles: string[]): number => {
   let songsCount: number;
   // Asígnale a la variable songsCount el número de elementos del array recibido
-  songsCount = songTitles.length;
-  return songsCount;
+
+  return (songsCount = songTitles.length);
 };
 
 export const removeSongByPosition = (
@@ -88,7 +84,7 @@ export const getErrorMessage = (errorCode: string): string => {
       errorMessage = "La playlist está llena";
       break;
     default:
-      errorMessage = "";
+      errorMessage = "Codigo de error Desconocido :S"; // Si el código de error no es válido, asígnale un mensaje genérico
   }
 
   return errorMessage;
